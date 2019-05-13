@@ -8,26 +8,26 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   butTrain1 = createButton('Train class 1');
-  butTrain1.position(19, 19);
+  butTrain1.position(20, 40);
   butTrain1.touchStarted(function(){
     trainModel(getOrientation(), '1');
   });
 
   butReset1 = createButton('Reset class 1');
-  butReset1.position(19, 39);
+  butReset1.position(20, 60);
   butReset1.touchStarted(function(){
     trainModel(getOrientation(), '1');
   });
 
 
   butTrain2 = createButton('Train class 2');
-  butTrain2.position(19, 59);
+  butTrain2.position(20, 80);
   butTrain2.touchStarted(function(){
     trainModel(getOrientation(), '2');
   })
 
   butReset2 = createButton('Reset class 2');
-  butReset2.position(19, 79);
+  butReset2.position(20, 100);
   butReset2.touchStarted(function(){
     trainModel(getOrientation(), '2');
   });
@@ -36,7 +36,7 @@ function setup() {
 function draw() {
   background(255);
 
-  text(currentClass, 19, 0);
+  text(currentClass, 20, 20);
   if(debug){
     console.log(currentClass);
   }
