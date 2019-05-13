@@ -19,13 +19,13 @@ function setup() {
   });
 
 
-  butTrain2 = createButton('Train class 1');
+  butTrain2 = createButton('Train class 2');
   butTrain2.position(19, 59);
   butTrain2.touchStarted(function(){
     trainModel(getOrientation(), '2');
   })
 
-  butReset2 = createButton('Reset class 1');
+  butReset2 = createButton('Reset class 2');
   butReset2.position(19, 79);
   butReset2.touchStarted(function(){
     trainModel(getOrientation(), '1');
