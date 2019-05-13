@@ -38,7 +38,7 @@ function draw() {
   background(255);
   if(debug){
     console.log(currentClass);
-    text(debugString, 20, 120);
+    text(debugString, 20, 150);
   }
 
   text(currentClass, 20, 20);
