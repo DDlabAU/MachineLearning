@@ -60,6 +60,7 @@ function deviceMoved(){
   knnClassifier.classify(features, function(err, result) {
     if(err){
       console.log(err);
+      debugString = err;
     } else {
       console.log(result); // result.label is the predicted label
       currentClass = result;
