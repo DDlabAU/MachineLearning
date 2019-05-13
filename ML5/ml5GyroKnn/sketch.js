@@ -61,6 +61,7 @@ function deviceMoved(){
     if(err){
       console.log(err);
       debugString = err;
+      currentClass = 'classification error';
     } else {
       console.log(result); // result.label is the predicted label
       currentClass = result;
