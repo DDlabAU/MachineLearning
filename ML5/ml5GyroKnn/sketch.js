@@ -13,20 +13,20 @@ function setup() {
   });
 
   butReset1 = createButton('Reset class 1');
-  butReset1.position(39, 19);
+  butReset1.position(19, 39);
   butReset1.touchStarted(function(){
     trainModel(getOrientation(), '1');
   });
 
 
   butTrain2 = createButton('Train class 1');
-  butTrain2.position(19, 19);
+  butTrain2.position(19, 59);
   butTrain2.touchStarted(function(){
     trainModel(getOrientation(), '2');
   })
 
   butReset2 = createButton('Reset class 1');
-  butReset2.position(39, 19);
+  butReset2.position(19, 79);
   butReset2.touchStarted(function(){
     trainModel(getOrientation(), '1');
   });
