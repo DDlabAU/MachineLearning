@@ -3,7 +3,7 @@ let butTrain1, butTrain2, butReset1, butReset2;
 let class1Examples, class2Examples;
 let currentClass = 'nothing trained';
 let debug = true;
-let debugString;
+let debugString = 'nothing trained';
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -35,18 +35,19 @@ function setup() {
 }
 
 function draw() {
+  background(255);
   if(debug){
     console.log(currentClass);
+    text(debugString, 20, 120);
   }
-  background(255);
 
   text(currentClass, 20, 20);
-  text(debugString, 20, 120);
 }
 
 function trainModel(features, label){
   if(debug){
     console.log('training label ' + label);
+    debugString = 'training label ' + label;
   }
   knnClassifier.addExample(features, label);
 }
@@ -54,7 +55,7 @@ function trainModel(features, label){
 function deviceMoved(){
   if(debug){
     console.log('device moved')
-    text('device moved', 20, 120);
+    debugString = 'device moved';
   }
   knnClassifier.classify(features, function(err, result) {
     if(err){
@@ -88,6 +89,7 @@ function updateCounts() {
 function clearLabel(label) {
   if(debug){
     console.log('clearing label ' + label);
+    debugString = 'clearing label ' + label;
   }
   knnClassifier.clearLabel(label);
   updateCounts();
