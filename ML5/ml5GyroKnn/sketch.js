@@ -1,7 +1,7 @@
 const knnClassifier = ml5.KNNClassifier();
 let butTrain1, butTrain2, butReset1, butReset2;
 let class1Examples, class2Examples;
-let currentClass;
+let currentClass = 'nothing trained';
 let debug = true;
 
 function setup() {
