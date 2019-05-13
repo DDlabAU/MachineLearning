@@ -71,7 +71,10 @@ function getOrientation(){
   // Note: The order the rotations are called is important, ie. if used
   // together, it must be called in the order Z-X-Y or there might be
   // unexpected behaviour.
-
+  if(debug){
+    console.log([rotationZ, rotationX, rotationY]);
+    debugString = [rotationZ, rotationX, rotationY];
+  }
   return [rotationZ, rotationX, rotationY];
 }
 
