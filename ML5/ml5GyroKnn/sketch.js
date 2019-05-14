@@ -4,8 +4,8 @@ let class1Examples, class2Examples;
 let currentClass = 'nothing trained';
 let debug = true;
 let debugString = 'nothing trained';
-let class1NumLabels = 0;
-let class2NumLabels = 0;
+let class1NumLabels = 'label 1';
+let class2NumLabels = 'label 2';
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
