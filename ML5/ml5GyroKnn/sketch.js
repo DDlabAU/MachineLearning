@@ -18,7 +18,7 @@ function setup() {
 
   butReset1 = createButton('Reset class 1');
   butReset1.position(20, 60);
-  butReset1.touchStarted(clearLabel('2'));
+  butReset1.touchStarted(clearAllLabels());
 
 
   butTrain2 = createButton('Train class 2');
@@ -29,7 +29,7 @@ function setup() {
 
   butReset2 = createButton('Reset class 2');
   butReset2.position(20, 100);
-  butReset2.touchStarted(clearLabel('2'));
+  butReset2.touchStarted(clearAllLabels());
 }
 
 function draw() {
