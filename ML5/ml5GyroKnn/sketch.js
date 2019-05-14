@@ -5,7 +5,7 @@ let currentClass = 'nothing trained';
 let debug = true;
 let debugString = 'nothing trained';
 let class1NumLabels = 0;
-let class2NumLabes = 0;
+let class2NumLabels = 0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
