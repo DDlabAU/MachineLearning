@@ -18,7 +18,7 @@ function setup() {
 
   butReset1 = createButton('Reset class 1');
   butReset1.position(20, 60);
-  butReset1.touchStarted(clearAllLabels());
+  butReset1.touchStarted(clearAllLabels);
 
 
   butTrain2 = createButton('Train class 2');
@@ -29,7 +29,7 @@ function setup() {
 
   butReset2 = createButton('Reset class 2');
   butReset2.position(20, 100);
-  butReset2.touchStarted(clearAllLabels());
+  butReset2.touchStarted(clearAllLabels);
 }
 
 function draw() {
@@ -58,7 +58,7 @@ function deviceMoved(){
     console.log('device moved')
     debugString = 'device moved';
   }
-  knnClassifier.classify(features, function(err, result) {
+  knnClassifier.classify(getOrientation(), function(err, result) {
     if(err){
       console.log(err);
       debugString = err;
