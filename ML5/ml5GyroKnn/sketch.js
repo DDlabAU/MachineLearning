@@ -82,7 +82,8 @@ function getOrientation(){
     console.log([rotationZ, rotationX, rotationY]);
     debugString = [rotationZ, rotationX, rotationY];
   }
-  return [rotationZ, rotationX, rotationY];
+  return [100, 200, 300];
+  // return [rotationZ, rotationX, rotationY];
 }
 
 // Update the example count for each label
