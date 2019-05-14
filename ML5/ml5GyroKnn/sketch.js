@@ -4,6 +4,8 @@ let class1Examples, class2Examples;
 let currentClass = 'nothing trained';
 let debug = true;
 let debugString = 'nothing trained';
+let class1NumLabels = 0;
+let class2NumLabes = 0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -42,6 +44,8 @@ function draw() {
   }
 
   text(currentClass, 20, 20);
+  text(class1NumLabels, 20, 170);
+  text(class2NumLabels, 20, 170);
 }
 
 function trainModel(features, label){
@@ -50,6 +54,7 @@ function trainModel(features, label){
     debugString = 'training label ' + label;
   }
   knnClassifier.addExample(features, label);
+  updateCounts();
 }
 
 function deviceMoved(){
@@ -85,9 +90,9 @@ function updateCounts() {
   const counts = knnClassifier.getCountByLabel();
 
 
-  select('#exampleRock').html(counts['Rock'] || 0);
-  select('#examplePaper').html(counts['Paper'] || 0);
-  select('#exampleScissor').html(counts['Scissor'] || 0);
+  class1NumLabels = counts['1'] || 0;
+  class2NumLabes = counts['2'] || 0;
+
 }
 
 // Clear the examples in one label
