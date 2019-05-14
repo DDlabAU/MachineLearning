@@ -91,7 +91,7 @@ function updateCounts() {
 
 
   class1NumLabels = counts['1'] || 0;
-  class2NumLabes = counts['2'] || 0;
+  class2NumLabels = counts['2'] || 0;
 
 }
 
