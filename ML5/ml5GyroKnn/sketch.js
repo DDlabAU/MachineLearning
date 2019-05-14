@@ -45,7 +45,7 @@ function draw() {
 
   text(currentClass, 20, 20);
   text(class1NumLabels, 20, 170);
-  text(class2NumLabels, 20, 170);
+  text(class2NumLabels, 20, 190);
 }
 
 function trainModel(features, label){
