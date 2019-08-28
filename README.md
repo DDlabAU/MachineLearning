@@ -1,7 +1,7 @@
-# MachineLearning
+# Machine Learning
 Samling af machine learning eksempler og ressourcer 
 
-## Anbefalet Læsning
+## Anbefalet læsning
 __On Missing Data Sets__  
 Af Mimi Onuoha  
 https://github.com/MimiOnuoha/missing-datasets
